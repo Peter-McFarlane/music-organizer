@@ -53,7 +53,7 @@ def organize_songs(paths):
     num_organized = 0
     num_skipped = 0
 
-    print('\norganizing...')
+    print('\nOrganizing...')
 
     for path in paths:
         extension = os.path.splitext(path)[1]
@@ -114,9 +114,9 @@ def organize_songs(paths):
                 num_skipped += 1
                 continue
             
-    print('\ndone :)')
-    print('songs organized: ', num_organized)
-    print('songs skipped:   ', num_skipped)
+    print('\nDone :)')
+    print('Songs organized: ', num_organized)
+    print('Songs skipped:   ', num_skipped)
 
 # main loop
 organize_songs(paths)
