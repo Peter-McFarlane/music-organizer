@@ -42,7 +42,7 @@ def string_formatter(name):
     # remove oddball characters that can't be used in filenames
     name = re.sub('[<>:?|/\*"]', '', name) 
     # change articles to be title case rather than proper case
-    # e.g. "System Of A Down" --> "System of a Down"
+    # e.g. "System Of A Down" -> "System of a Down"
     for k, v in articles.items(): 
         name = name.replace(k, v)
 
