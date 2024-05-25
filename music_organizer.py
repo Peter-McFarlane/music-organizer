@@ -7,8 +7,8 @@ from pathlib import Path
 from tinytag import TinyTag, TinyTagException
 
 # put names of origin and destinaiton directories here
-root_dir = '<paste root directory here>'
-dest_dir = '<paste destination directory here>'
+root_dir = '<root directory>'
+dest_dir = '<destination directory>'
 
 # filepath formatting
 root_dir.replace(os.sep, '/')
@@ -26,12 +26,15 @@ supported_extensions = set(TinyTag.SUPPORTED_FILE_EXTENSIONS)
 # dictionary to map articles to title case instead of proper case
 articles = {
     ' A ': ' a ',
+    ' As ': ' as ',
+    ' At ': ' at ',
     ' In ': ' in ',
     ' Of ': ' of ',
     ' On ': ' on ',
     ' Or ': ' or ',
     ' To ': ' to ',  
     ' And ': ' and ',
+    ' For ': ' for ',
     ' The ': ' the ' 
 }
 
